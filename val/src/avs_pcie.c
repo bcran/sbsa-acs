@@ -83,6 +83,10 @@ val_pcie_read_cfg(uint32_t bdf, uint32_t offset, uint32_t *data)
 
   val_print(AVS_PRINT_INFO, "\n       Calculated config address is %lx", ecam_base + cfg_addr + offset);
 
+  val_print(AVS_PRINT_INFO, "\n\ng_print_level=%d\n", g_print_level);
+  val_print(AVS_PRINT_INFO, "\n\nAVS_PRINT_INFO=%d\n", AVS_PRINT_INFO);
+  while (1) {}
+
   *data = pal_mmio_read(ecam_base + cfg_addr + offset);
   return 0;
 
