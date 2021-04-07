@@ -19,7 +19,6 @@
 #include "val/include/val_interface.h"
 
 #include "val/include/sbsa_avs_wd.h"
-#include "val/include/sbsa_avs_secure.h"
 
 #define TEST_NUM   (AVS_SECURE_TEST_NUM_BASE + 1)
 #define TEST_DESC  "Check NS Watchdog WS1 interrupt   "
